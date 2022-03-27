@@ -1,0 +1,4 @@
+<map id="Entity::updateCurrent" name="Entity::updateCurrent">
+<area shape="rect" id="node1" title="updates the current entity" alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node2" href="$class_scene_node.html#aec657f40def4be5c901192ec85027a35" title="updates the position of this node" alt="" coords="199,5,325,32"/>
+</map>

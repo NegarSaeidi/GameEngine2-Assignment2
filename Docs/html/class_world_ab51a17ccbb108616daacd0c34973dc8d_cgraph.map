@@ -1,0 +1,4 @@
+<map id="World::draw" name="World::draw">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node2" href="$class_scene_node.html#a41b1a847182e49103bc145bd4604e056" title="calls the draw function of this node and its children" alt="" coords="144,5,268,32"/>
+</map>

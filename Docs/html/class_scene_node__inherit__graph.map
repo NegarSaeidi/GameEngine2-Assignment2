@@ -1,0 +1,6 @@
+<map id="SceneNode" name="SceneNode">
+<area shape="rect" id="node1" title=" " alt="" coords="30,5,181,303"/>
+<area shape="rect" id="node2" href="$class_entity.html" title=" " alt="" coords="44,351,167,487"/>
+<area shape="rect" id="node3" href="$class_aircraft.html" title=" " alt="" coords="5,535,88,612"/>
+<area shape="rect" id="node4" href="$class_sprite_node.html" title=" " alt="" coords="112,535,219,612"/>
+</map>

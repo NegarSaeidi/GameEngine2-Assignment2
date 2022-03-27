@@ -1,0 +1,4 @@
+<map id="Entity::getVelocity" name="Entity::getVelocity">
+<area shape="rect" id="node1" title="returns the velocity of the entity" alt="" coords="156,5,285,32"/>
+<area shape="rect" id="node2" href="$class_world.html#a36c003f54e14e022a360551af5e7923e" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="5,5,108,32"/>
+</map>

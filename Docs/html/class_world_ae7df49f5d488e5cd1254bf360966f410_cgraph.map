@@ -1,0 +1,8 @@
+<map id="World::buildScene" name="World::buildScene">
+<area shape="rect" id="node1" title="builds the game scene, creates scene nodes and adds the m to the scene graph" alt="" coords="5,107,133,133"/>
+<area shape="rect" id="node2" href="$class_scene_node.html#acdfa2c2ba28bce076c886eaba2d9e650" title="add a child to this node" alt="" coords="181,5,344,32"/>
+<area shape="rect" id="node3" href="$class_scene_node.html#a67ca883a91d8c45004a0786330548d8f" title="calls the build function of this node and its children" alt="" coords="201,56,325,83"/>
+<area shape="rect" id="node4" href="$class_scene_node.html#a45f8882749060b059fe26eb02f7f843b" title="sets the world position of this node" alt="" coords="181,107,344,133"/>
+<area shape="rect" id="node5" href="$class_scene_node.html#a753cea60b8a939a82a47258f4a51df82" title="sets the scale of this node" alt="" coords="189,157,337,184"/>
+<area shape="rect" id="node6" href="$class_entity.html#acf5f6bb1df6f5dba9923a2355b8c0ac2" title="sets the velocity of the entity" alt="" coords="198,208,327,235"/>
+</map>

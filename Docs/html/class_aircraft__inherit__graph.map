@@ -1,0 +1,5 @@
+<map id="Aircraft" name="Aircraft">
+<area shape="rect" id="node1" title=" " alt="" coords="39,535,122,612"/>
+<area shape="rect" id="node2" href="$class_entity.html" title=" " alt="" coords="19,351,142,487"/>
+<area shape="rect" id="node3" href="$class_scene_node.html" title=" " alt="" coords="5,5,156,303"/>
+</map>

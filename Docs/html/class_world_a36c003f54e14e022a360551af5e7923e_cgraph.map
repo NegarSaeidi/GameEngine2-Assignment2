@@ -1,0 +1,8 @@
+<map id="World::update" name="World::update">
+<area shape="rect" id="node1" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="5,107,108,133"/>
+<area shape="rect" id="node2" href="$class_entity.html#a8e1cbc69431758859f15d0b9d70b8cf5" title="returns the velocity of the entity" alt="" coords="189,5,319,32"/>
+<area shape="rect" id="node3" href="$class_scene_node.html#a6ba2f5754854829e7e49f135bb4fce45" title="returns the world position of this node" alt="" coords="156,56,352,83"/>
+<area shape="rect" id="node4" href="$class_scene_node.html#aec657f40def4be5c901192ec85027a35" title="updates the position of this node" alt="" coords="191,107,317,133"/>
+<area shape="rect" id="node5" href="$class_entity.html#acf5f6bb1df6f5dba9923a2355b8c0ac2" title="sets the velocity of the entity" alt="" coords="189,157,319,184"/>
+<area shape="rect" id="node6" href="$class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08" title="calls the update function of this node and its children" alt="" coords="186,208,322,235"/>
+</map>

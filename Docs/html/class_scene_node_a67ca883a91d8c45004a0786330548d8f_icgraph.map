@@ -1,0 +1,4 @@
+<map id="SceneNode::build" name="SceneNode::build">
+<area shape="rect" id="node1" title="calls the build function of this node and its children" alt="" coords="181,5,305,32"/>
+<area shape="rect" id="node2" href="$class_world.html#ae7df49f5d488e5cd1254bf360966f410" title="builds the game scene, creates scene nodes and adds the m to the scene graph" alt="" coords="5,5,133,32"/>
+</map>

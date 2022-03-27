@@ -1,0 +1,5 @@
+<map id="Entity::setVelocity" name="Entity::setVelocity">
+<area shape="rect" id="node1" title="sets the velocity of the entity" alt="" coords="181,31,311,57"/>
+<area shape="rect" id="node2" href="$class_world.html#ae7df49f5d488e5cd1254bf360966f410" title="builds the game scene, creates scene nodes and adds the m to the scene graph" alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node3" href="$class_world.html#a36c003f54e14e022a360551af5e7923e" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="18,56,121,83"/>
+</map>
