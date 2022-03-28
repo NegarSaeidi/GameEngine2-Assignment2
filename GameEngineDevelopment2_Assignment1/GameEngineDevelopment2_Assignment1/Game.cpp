@@ -26,8 +26,10 @@ bool Game::Initialize()
 	if (!D3DApp::Initialize())
 		return false;
 
-	mCamera.SetPosition(0, 10, 0);
-	mCamera.Pitch(3.14 / 2);
+	mCamera.SetPosition(0,10, 0);
+	mCamera.Pitch(3.14/2 );
+	/*mCamera.RotateY(45);
+	mCamera.Roll(45);*/
 	// Reset the command list to prep for initialization commands.
 	ThrowIfFailed(mCommandList->Reset(mDirectCmdListAlloc.Get(), nullptr));
 	mCbvSrvDescriptorSize = md3dDevice->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV);

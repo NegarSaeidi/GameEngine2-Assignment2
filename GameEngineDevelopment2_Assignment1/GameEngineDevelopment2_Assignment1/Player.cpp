@@ -1,3 +1,8 @@
+/**-------------------------------------------------------------------------
+//Assignment 1
+// author : Negar Saeidi - 101261396
+// Player.cpp, handles player input. previously this was done in Game class
+-------------------------------------------------------------------------*/
 #pragma region step 2
 #include "Player.hpp"
 #include "CommandQueue.hpp"
@@ -12,8 +17,8 @@
 using namespace DirectX;
 struct AircraftMover
 {
-	AircraftMover(float vx, float vy)
-		: velocity(vx,vy)
+	AircraftMover(float vx, float vy, float vz)
+		: velocity(vx,vy,vz)
 	{
 	}
 
@@ -22,7 +27,7 @@ struct AircraftMover
 		aircraft.accelerate(velocity);
 	}
 
-	XMFLOAT2 velocity;
+	XMFLOAT3 velocity;
 };
 
 Player::Player()
@@ -32,11 +37,14 @@ Player::Player()
 	mKeyBinding[VK_RIGHT] = MoveRight;
 	mKeyBinding[VK_UP] = MoveUp;
 	mKeyBinding[VK_DOWN] = MoveDown;
+	
 
 	mKeyBinding['A'] = MoveLeft;
 	mKeyBinding['D'] = MoveRight;
 	mKeyBinding['W'] = MoveUp;
 	mKeyBinding['S'] = MoveDown;
+	mKeyBinding['R'] = MoveForward;
+
 
 	// Set initial action bindings
 	initializeActions();
@@ -48,7 +56,11 @@ Player::Player()
 	for (auto& pair : mActionBinding)
 		pair.second.category = Category::PlayerAircraft;
 }
-//key released and pressed
+/**
+ * handles key release and press events
+ *@param const Command&
+ * @return void
+ */
 void Player::handleEvent( CommandQueue& commands)
 {
 	for (auto pair : mKeyBinding)
@@ -73,7 +85,11 @@ void Player::handleEvent( CommandQueue& commands)
 		}
 	}
 }
-//key pressed down continuously
+/**
+ * handles holding a key down event (real time input)
+ *@param const Command&
+ * @return void
+ */
 void Player::handleRealtimeInput(CommandQueue& commands)
 {
 	// Traverse all assigned keys and check if they are pressed
@@ -86,7 +102,11 @@ void Player::handleRealtimeInput(CommandQueue& commands)
 		}
 	}
 }
-
+/**
+ * Adds new keybindings
+ *@param Action action, char key
+ * @return void
+ */
 void Player::assignKey(Action action, char key)
 {
 	// Remove all keys that already map to action
@@ -101,7 +121,11 @@ void Player::assignKey(Action action, char key)
 	// Insert new binding
 	mKeyBinding[key] = action;
 }
-
+/**
+ * returns the assigned key based on the relative action
+ *@param Action action
+ * @return char
+ */
 char Player::getAssignedKey(Action action) const
 {
 	for (auto pair : mKeyBinding)
@@ -112,15 +136,20 @@ char Player::getAssignedKey(Action action) const
 
 	return 0x00;
 }
-
+/**
+ * Assign appropriate behaviour for each key 
+ *@param none
+ * @return void
+ */
 void Player::initializeActions()
 {
-	const float playerSpeed = 20.f;
+	const float playerSpeed = 10.f;
 
-	mActionBinding[MoveLeft].action = derivedAction<Aircraft>(AircraftMover(-playerSpeed, 0.f));
-	mActionBinding[MoveRight].action = derivedAction<Aircraft>(AircraftMover(playerSpeed, 0.f));
-	mActionBinding[MoveUp].action = derivedAction<Aircraft>(AircraftMover(0.f, playerSpeed));
-	mActionBinding[MoveDown].action = derivedAction<Aircraft>(AircraftMover(0.f, -playerSpeed));
+	mActionBinding[MoveLeft].action = derivedAction<Aircraft>(AircraftMover(-playerSpeed, 0.f,0.f));
+	mActionBinding[MoveRight].action = derivedAction<Aircraft>(AircraftMover(playerSpeed, 0.f,0.f));
+	mActionBinding[MoveUp].action = derivedAction<Aircraft>(AircraftMover(0.f, playerSpeed,0.f));
+	mActionBinding[MoveDown].action = derivedAction<Aircraft>(AircraftMover(0.f, -playerSpeed,0.f));
+	mActionBinding[MoveForward].action = derivedAction<Aircraft>(AircraftMover(0.f, .0f, -playerSpeed));
 }
 
 bool Player::isRealtimeAction(Action action)
@@ -131,6 +160,7 @@ bool Player::isRealtimeAction(Action action)
 	case MoveRight:
 	case MoveDown:
 	case MoveUp:
+	case MoveForward:
 		return true;
 
 	default:

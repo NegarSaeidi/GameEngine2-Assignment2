@@ -195,7 +195,7 @@ unsigned int SceneNode::getCategory() const
 void SceneNode::move(float x, float y, float z)
 {
 	mWorldPosition.x += x;
-	mWorldPosition.y += y;
+    mWorldPosition.y += y;
 	mWorldPosition.z += z;
 }
 

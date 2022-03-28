@@ -14,7 +14,7 @@ World::World(Game* game)
 	, mPlayerAircraft(nullptr)
 	, mBackground(nullptr)
 	, mSceneLayers()
-	, mWorldBounds(-4.f, 4.f, 200.0f, 0.0f)
+	, mWorldBounds(-3.f, 3.f, 200.0f, 0.0f)
 	, mSpawnPostion(0.0f,0.0f)
 	, mScrollSpeed(-1.f)
 {
@@ -30,7 +30,7 @@ void World::update(const GameTimer& gt)
 	
       mBackground->move(0.f, 0, mScrollSpeed * gt.DeltaTime());
 	
-	  mPlayerAircraft->setVelocity(0.0f, 0.0f);
+	  mPlayerAircraft->setVelocity(0.0f, 0.0f,0.0f);
 
 	  // Forward commands to scene graph, adapt velocity (scrolling, diagonal correction)
 	  while (!mCommandQueue.isEmpty())
@@ -69,7 +69,7 @@ void World::buildScene()
 	mPlayerAircraft = aircraft.get();
 	mPlayerAircraft->setPosition(0, 0.1, -2.0);
 	mPlayerAircraft->setScale(0.5, 0.5, 0.5);
-	mPlayerAircraft->setVelocity(1,0.0001);
+	mPlayerAircraft->setVelocity(1,0.0001,0);
 	mSceneLayers[Air]->attachChild(std::move(aircraft));
 	
 
@@ -120,11 +120,11 @@ void World::adaptPlayerPosition()
 
 void World::adaptPlayerVelocity()
 {
-	XMFLOAT2 velocity = mPlayerAircraft->getVelocity();
+	XMFLOAT3 velocity = mPlayerAircraft->getVelocity();
 
 	// If moving diagonally, reduce velocity (to have always same velocity)
-	if (velocity.x != 0.f && velocity.y != 0.f)
-		mPlayerAircraft->setVelocity(velocity.x / std::sqrt(2.f), velocity.y / std::sqrt(2.f));
+	if (velocity.x != 0.f && velocity.y != 0.f && velocity.z !=0)
+		mPlayerAircraft->setVelocity(velocity.x / std::sqrt(2.f), velocity.y / std::sqrt(2.f), velocity.z / std::sqrt(2.f));
 
 	// Add scrolling velocity
 //	mPlayerAircraft->accelerate(0.f, mScrollSpeed);
