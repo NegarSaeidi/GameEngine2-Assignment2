@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_3d_150',['operator=',['../struct_frame_resource.html#a80cc19c9bec7649656907c2f39ad9e8a',1,'FrameResource::operator=()'],['../class_game.html#ab170450fc35d9482f85eb486d9604795',1,'Game::operator=()']]]
+  ['initialize_209',['Initialize',['../class_game.html#a16354d232327f6c21319713bf6983674',1,'Game']]],
+  ['isempty_210',['isEmpty',['../class_command_queue.html#a3a6eb6a7c83d9b20ad7a6cac63795ec1',1,'CommandQueue']]]
 ];

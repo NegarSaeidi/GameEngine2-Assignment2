@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vertex_685',['Vertex',['../struct_geometry_generator_1_1_vertex.html#aa102c6b22eed04a61aa0021149b198e5',1,'GeometryGenerator::Vertex::Vertex()'],['../struct_geometry_generator_1_1_vertex.html#a322406351e5c5e6acda529490c61996b',1,'GeometryGenerator::Vertex::Vertex(const DirectX::XMFLOAT3 &amp;p, const DirectX::XMFLOAT3 &amp;n, const DirectX::XMFLOAT3 &amp;t, const DirectX::XMFLOAT2 &amp;uv)'],['../struct_geometry_generator_1_1_vertex.html#a2df7807f385db53fb4bbb6f6f42e8493',1,'GeometryGenerator::Vertex::Vertex(float px, float py, float pz, float nx, float ny, float nz, float tx, float ty, float tz, float u, float v)']]],
-  ['vertexbufferview_686',['VertexBufferView',['../struct_mesh_geometry.html#acec2bf9adf97ea1263702d66a69c8513',1,'MeshGeometry']]]
+  ['_7eframeresource_229',['~FrameResource',['../struct_frame_resource.html#a93d669d1d4db3b4ed5cd6f0f6b921809',1,'FrameResource']]],
+  ['_7egame_230',['~Game',['../class_game.html#ae3d112ca6e0e55150d2fdbc704474530',1,'Game']]]
 ];

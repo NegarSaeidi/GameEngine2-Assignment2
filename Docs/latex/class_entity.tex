@@ -6,29 +6,43 @@
 
 
 
-Inheritance diagram for Entity\+:
-% FIG 0
+Inheritance diagram for Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{class_entity__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Entity\+:
-% FIG 1
+Collaboration diagram for Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_entity__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_entity_a9f6b0ce5dcbdb9107ba1972da24003a6}{Entity}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)
 \item 
-void \mbox{\hyperlink{class_entity_acf5f6bb1df6f5dba9923a2355b8c0ac2}{set\+Velocity}} (XMFLOAT2 velocity)
+void \mbox{\hyperlink{class_entity_a472e1690df5fb48c6c7f052e4cb39c78}{set\+Velocity}} (XMFLOAT3 velocity)
 \begin{DoxyCompactList}\small\item\em sets the velocity of the entity \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_entity_a7873fbd61cf1a742d4492ec438a9ac9f}{set\+Velocity}} (float vx, float vy)
+void \mbox{\hyperlink{class_entity_abb3c22fe7e78968131560642e360e12b}{set\+Velocity}} (float vx, float vy, float vz)
 \item 
-XMFLOAT2 \mbox{\hyperlink{class_entity_a8e1cbc69431758859f15d0b9d70b8cf5}{get\+Velocity}} () const
+XMFLOAT3 \mbox{\hyperlink{class_entity_af4fcc5c9f7e9d705502269444ef3eca3}{get\+Velocity}} () const
 \begin{DoxyCompactList}\small\item\em returns the velocity of the entity \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a6604e7ba4eee5511a6aa21345cbdaf28}{accelerate}} (XMFLOAT3 velocity)
+\item 
+void \mbox{\hyperlink{class_entity_aa2c71a179fcbb868c8ae01e98aaf79a9}{accelerate}} (float vx, float vy, float vz)
+\item 
 virtual void \mbox{\hyperlink{class_entity_ac2ba9cb8ca54fff11ad7397334edcd94}{update\+Current}} (const Game\+Timer \&gt)
 \begin{DoxyCompactList}\small\item\em updates the current entity \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-XMFLOAT2 \mbox{\hyperlink{class_entity_a31d59d6f95b6084907efdf6f58bdd525}{m\+Velocity}}
+XMFLOAT3 \mbox{\hyperlink{class_entity_a15aa77787228598dfa35f5f822695c43}{m\+Velocity}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -43,11 +57,30 @@ XMFLOAT2 \mbox{\hyperlink{class_entity_a31d59d6f95b6084907efdf6f58bdd525}{m\+Vel
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_entity_a8e1cbc69431758859f15d0b9d70b8cf5}\label{class_entity_a8e1cbc69431758859f15d0b9d70b8cf5}} 
+\mbox{\Hypertarget{class_entity_aa2c71a179fcbb868c8ae01e98aaf79a9}\label{class_entity_aa2c71a179fcbb868c8ae01e98aaf79a9}} 
+\index{Entity@{Entity}!accelerate@{accelerate}}
+\index{accelerate@{accelerate}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{accelerate()}{accelerate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Entity\+::accelerate (\begin{DoxyParamCaption}\item[{float}]{vx,  }\item[{float}]{vy,  }\item[{float}]{vz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_entity_a6604e7ba4eee5511a6aa21345cbdaf28}\label{class_entity_a6604e7ba4eee5511a6aa21345cbdaf28}} 
+\index{Entity@{Entity}!accelerate@{accelerate}}
+\index{accelerate@{accelerate}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{accelerate()}{accelerate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Entity\+::accelerate (\begin{DoxyParamCaption}\item[{XMFLOAT3}]{velocity }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_entity_a6604e7ba4eee5511a6aa21345cbdaf28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_entity_af4fcc5c9f7e9d705502269444ef3eca3}\label{class_entity_af4fcc5c9f7e9d705502269444ef3eca3}} 
 \index{Entity@{Entity}!getVelocity@{getVelocity}}
 \index{getVelocity@{getVelocity}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
-{\footnotesize\ttfamily XMFLOAT2 Entity\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily XMFLOAT3 Entity\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -61,19 +94,17 @@ returns the velocity of the entity
 \begin{DoxyReturn}{Returns}
 XMFLOAT2 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-% FIG 2
-\mbox{\Hypertarget{class_entity_a7873fbd61cf1a742d4492ec438a9ac9f}\label{class_entity_a7873fbd61cf1a742d4492ec438a9ac9f}} 
+\mbox{\Hypertarget{class_entity_abb3c22fe7e78968131560642e360e12b}\label{class_entity_abb3c22fe7e78968131560642e360e12b}} 
 \index{Entity@{Entity}!setVelocity@{setVelocity}}
 \index{setVelocity@{setVelocity}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{float}]{vx,  }\item[{float}]{vy }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{float}]{vx,  }\item[{float}]{vy,  }\item[{float}]{vz }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_entity_acf5f6bb1df6f5dba9923a2355b8c0ac2}\label{class_entity_acf5f6bb1df6f5dba9923a2355b8c0ac2}} 
+\mbox{\Hypertarget{class_entity_a472e1690df5fb48c6c7f052e4cb39c78}\label{class_entity_a472e1690df5fb48c6c7f052e4cb39c78}} 
 \index{Entity@{Entity}!setVelocity@{setVelocity}}
 \index{setVelocity@{setVelocity}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{XMFLOAT2}]{velocity }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{XMFLOAT3}]{velocity }\end{DoxyParamCaption})}
 
 
 
@@ -87,8 +118,13 @@ sets the velocity of the entity
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-% FIG 3
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_entity_a472e1690df5fb48c6c7f052e4cb39c78_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_entity_ac2ba9cb8ca54fff11ad7397334edcd94}\label{class_entity_ac2ba9cb8ca54fff11ad7397334edcd94}} 
 \index{Entity@{Entity}!updateCurrent@{updateCurrent}}
 \index{updateCurrent@{updateCurrent}!Entity@{Entity}}
@@ -111,20 +147,25 @@ void
 
 Reimplemented from \mbox{\hyperlink{class_scene_node}{Scene\+Node}}.
 
-Here is the call graph for this function\+:
-% FIG 4
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_entity_ac2ba9cb8ca54fff11ad7397334edcd94_cgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_entity_a31d59d6f95b6084907efdf6f58bdd525}\label{class_entity_a31d59d6f95b6084907efdf6f58bdd525}} 
+\mbox{\Hypertarget{class_entity_a15aa77787228598dfa35f5f822695c43}\label{class_entity_a15aa77787228598dfa35f5f822695c43}} 
 \index{Entity@{Entity}!mVelocity@{mVelocity}}
 \index{mVelocity@{mVelocity}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{mVelocity}{mVelocity}}
-{\footnotesize\ttfamily XMFLOAT2 Entity\+::m\+Velocity}
+{\footnotesize\ttfamily XMFLOAT3 Entity\+::m\+Velocity}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_entity_8hpp}{Entity.\+hpp}}\item 
-Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_entity_8cpp}{Entity.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+T163-\/\+Term6/\+Hooman-\/\+Engine/\+Assignment2/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_entity_8hpp}{Entity.\+hpp}}\item 
+D\+:/\+T163-\/\+Term6/\+Hooman-\/\+Engine/\+Assignment2/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_entity_8cpp}{Entity.\+cpp}}\end{DoxyCompactItemize}

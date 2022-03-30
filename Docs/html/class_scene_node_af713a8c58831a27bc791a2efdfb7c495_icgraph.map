@@ -1,0 +1,5 @@
+<map id="SceneNode::getCategory" name="SceneNode::getCategory">
+<area shape="rect" id="node1" title=" " alt="" coords="375,5,541,32"/>
+<area shape="rect" id="node2" href="$class_scene_node.html#a378e78ad679c28301c0db51afa389cb6" title=" " alt="" coords="156,5,327,32"/>
+<area shape="rect" id="node3" href="$class_world.html#a36c003f54e14e022a360551af5e7923e" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="5,5,108,32"/>
+</map>

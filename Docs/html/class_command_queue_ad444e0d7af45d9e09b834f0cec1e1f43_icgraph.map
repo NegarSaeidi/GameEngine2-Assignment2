@@ -1,0 +1,5 @@
+<map id="CommandQueue::push" name="CommandQueue::push">
+<area shape="rect" id="node1" title="pushes the new command to the queue" alt="" coords="237,31,392,57"/>
+<area shape="rect" id="node2" href="$class_player.html#abdabbfe5ce0c04acf504ff5054dbcbc1" title="handles key release and press events" alt="" coords="29,5,166,32"/>
+<area shape="rect" id="node3" href="$class_player.html#ac520744c103fb38763c8856b4f158627" title="handles holding a key down event (real time input)" alt="" coords="5,56,189,83"/>
+</map>

@@ -1,5 +1,4 @@
 /**
-*@mainpage Assignment 1 
-*@author Negar Saeidi - 101261396
-*GameEngine with DirectX   ((INSTRUCTIONS: Camera moves with WASD and Rotates with mouse for now!))
-*/
+@mainpage Assignment 2 - KeyBinding using Command Pattern 
+@author [Negar Saeidi - 101261396]
+*GameEngine with DirectX \n\n\n --------------------INSTRUCTIONS-------------------- \n - Aircrafts move with WASD and RF \n\n -R/F:Moves in Z direction \n - W/Up: moves up \n - S/Down: moves down \n - A/Left: moves left \n - D/Right: moves right  */

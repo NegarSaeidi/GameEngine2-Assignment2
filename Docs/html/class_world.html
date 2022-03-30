@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Game Engine 2 - Assignment 1 - DirectX: World Class Reference</title>
+<title>Game Engine 2 - Assignment 2 - DirectX: World Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Game Engine 2 - Assignment 1 - DirectX
+   <div id="projectname">Game Engine 2 - Assignment 2 - DirectX
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ Collaboration diagram for World:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_world__coll__graph.png" border="0" usemap="#a_world_coll__map" alt="Collaboration graph"/></div>
 <map name="a_world_coll__map" id="a_world_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,112,127"/>
+<area shape="rect" title=" " alt="" coords="5,5,104,112"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -111,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae7df49f5d488e5cd1254bf360966f410"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae7df49f5d488e5cd1254bf360966f410">buildScene</a> ()</td></tr>
 <tr class="memdesc:ae7df49f5d488e5cd1254bf360966f410"><td class="mdescLeft">&#160;</td><td class="mdescRight">builds the game scene, creates scene nodes and adds the m to the scene graph  <a href="class_world.html#ae7df49f5d488e5cd1254bf360966f410">More...</a><br /></td></tr>
 <tr class="separator:ae7df49f5d488e5cd1254bf360966f410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af224b413f30c86ec99d042d0f4df56ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_command_queue.html">CommandQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#af224b413f30c86ec99d042d0f4df56ee">getCommandQueue</a> ()</td></tr>
+<tr class="separator:af224b413f30c86ec99d042d0f4df56ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a358fecc8d0e42996d7bd1884f126a97c"></a>
@@ -173,7 +175,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_scene_node.html#a67ca883a91d8c45004a0786330548d8f" title="calls the build function of this node and its children" alt="" coords="201,56,325,83"/>
 <area shape="rect" href="class_scene_node.html#a45f8882749060b059fe26eb02f7f843b" title="sets the world position of this node" alt="" coords="181,107,344,133"/>
 <area shape="rect" href="class_scene_node.html#a753cea60b8a939a82a47258f4a51df82" title="sets the scale of this node" alt="" coords="189,157,337,184"/>
-<area shape="rect" href="class_entity.html#acf5f6bb1df6f5dba9923a2355b8c0ac2" title="sets the velocity of the entity" alt="" coords="198,208,327,235"/>
+<area shape="rect" href="class_entity.html#a472e1690df5fb48c6c7f052e4cb39c78" title="sets the velocity of the entity" alt="" coords="198,208,327,235"/>
 </map>
 </div>
 
@@ -202,6 +204,23 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_scene_node.html#a41b1a847182e49103bc145bd4604e056" title="calls the draw function of this node and its children" alt="" coords="144,5,268,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="af224b413f30c86ec99d042d0f4df56ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af224b413f30c86ec99d042d0f4df56ee">&#9670;&nbsp;</a></span>getCommandQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_command_queue.html">CommandQueue</a> &amp; World::getCommandQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -234,20 +253,22 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_world_a36c003f54e14e022a360551af5e7923e_cgraph.png" border="0" usemap="#aclass_world_a36c003f54e14e022a360551af5e7923e_cgraph" alt=""/></div>
 <map name="aclass_world_a36c003f54e14e022a360551af5e7923e_cgraph" id="aclass_world_a36c003f54e14e022a360551af5e7923e_cgraph">
-<area shape="rect" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="5,107,108,133"/>
-<area shape="rect" href="class_entity.html#a8e1cbc69431758859f15d0b9d70b8cf5" title="returns the velocity of the entity" alt="" coords="189,5,319,32"/>
-<area shape="rect" href="class_scene_node.html#a6ba2f5754854829e7e49f135bb4fce45" title="returns the world position of this node" alt="" coords="156,56,352,83"/>
-<area shape="rect" href="class_scene_node.html#aec657f40def4be5c901192ec85027a35" title="updates the position of this node" alt="" coords="191,107,317,133"/>
-<area shape="rect" href="class_entity.html#acf5f6bb1df6f5dba9923a2355b8c0ac2" title="sets the velocity of the entity" alt="" coords="189,157,319,184"/>
-<area shape="rect" href="class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08" title="calls the update function of this node and its children" alt="" coords="186,208,322,235"/>
+<area shape="rect" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="5,132,108,159"/>
+<area shape="rect" href="class_command_queue.html#a3a6eb6a7c83d9b20ad7a6cac63795ec1" title="checks to see if the queue is empty" alt="" coords="156,5,331,32"/>
+<area shape="rect" href="class_scene_node.html#aec657f40def4be5c901192ec85027a35" title="updates the position of this node" alt="" coords="180,56,307,83"/>
+<area shape="rect" href="class_scene_node.html#a378e78ad679c28301c0db51afa389cb6" title=" " alt="" coords="158,107,329,133"/>
+<area shape="rect" href="class_command_queue.html#ac2dde510222b8df393b55978f4594194" title="returns the last command from the queue" alt="" coords="169,157,317,184"/>
+<area shape="rect" href="class_entity.html#a472e1690df5fb48c6c7f052e4cb39c78" title="sets the velocity of the entity" alt="" coords="179,208,308,235"/>
+<area shape="rect" href="class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08" title="calls the update function of this node and its children" alt="" coords="175,259,311,285"/>
+<area shape="rect" href="class_scene_node.html#af713a8c58831a27bc791a2efdfb7c495" title=" " alt="" coords="379,107,545,133"/>
 </map>
 </div>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>GameEngineDevelopment2_Assignment1/<a class="el" href="_world_8hpp_source.html">World.hpp</a></li>
-<li>GameEngineDevelopment2_Assignment1/<a class="el" href="_world_8cpp.html">World.cpp</a></li>
+<li>D:/T163-Term6/Hooman-Engine/Assignment2/GameEngineDevelopment2_Assignment1/GameEngineDevelopment2_Assignment1/<a class="el" href="_world_8hpp_source.html">World.hpp</a></li>
+<li>D:/T163-Term6/Hooman-Engine/Assignment2/GameEngineDevelopment2_Assignment1/GameEngineDevelopment2_Assignment1/<a class="el" href="_world_8cpp.html">World.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

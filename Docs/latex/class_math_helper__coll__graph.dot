@@ -1,7 +1,0 @@
-digraph "MathHelper"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{MathHelper\n|+ Infinity\l+ Pi\l|+ RandF()\l+ RandF()\l+ Rand()\l+ Min()\l+ Max()\l+ Lerp()\l+ Clamp()\l+ AngleFromXY()\l+ SphericalToCartesian()\l+ InverseTranspose()\l+ Identity4x4()\l+ RandUnitVec3()\l+ RandHemisphereUnitVec3()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
-}

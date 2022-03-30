@@ -1,7 +1,7 @@
 <map id="Entity" name="Entity">
-<area shape="rect" id="node1" title=" " alt="" coords="93,736,216,872"/>
-<area shape="rect" id="node2" href="$class_scene_node.html" title=" " alt="" coords="79,404,230,687"/>
-<area shape="rect" id="node3" href="$class_game.html" title=" " alt="" coords="5,147,139,327"/>
-<area shape="rect" id="node4" title=" " alt="" coords="37,5,107,83"/>
-<area shape="rect" id="node5" href="$struct_render_item.html" title=" " alt="" coords="163,132,314,341"/>
+<area shape="rect" id="node1" title=" " alt="" coords="68,457,175,564"/>
+<area shape="rect" id="node2" href="$class_scene_node.html" title=" " alt="" coords="67,301,176,408"/>
+<area shape="rect" id="node3" href="$class_game.html" title=" " alt="" coords="5,132,104,239"/>
+<area shape="rect" id="node4" title=" " alt="" coords="19,5,90,83"/>
+<area shape="rect" id="node5" href="$struct_render_item.html" title=" " alt="" coords="128,132,240,239"/>
 </map>

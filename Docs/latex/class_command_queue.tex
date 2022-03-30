@@ -1,0 +1,105 @@
+\hypertarget{class_command_queue}{}\doxysection{Command\+Queue Class Reference}
+\label{class_command_queue}\index{CommandQueue@{CommandQueue}}
+
+
+{\ttfamily \#include $<$Command\+Queue.\+hpp$>$}
+
+
+
+Collaboration diagram for Command\+Queue\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_command_queue__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_command_queue_ad444e0d7af45d9e09b834f0cec1e1f43}{push}} (const \mbox{\hyperlink{struct_command}{Command}} \&command)
+\begin{DoxyCompactList}\small\item\em pushes the new command to the queue \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_command}{Command}} \mbox{\hyperlink{class_command_queue_ac2dde510222b8df393b55978f4594194}{pop}} ()
+\begin{DoxyCompactList}\small\item\em returns the last command from the queue \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_command_queue_a3a6eb6a7c83d9b20ad7a6cac63795ec1}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em checks to see if the queue is empty \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_command_queue_a3a6eb6a7c83d9b20ad7a6cac63795ec1}\label{class_command_queue_a3a6eb6a7c83d9b20ad7a6cac63795ec1}} 
+\index{CommandQueue@{CommandQueue}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!CommandQueue@{CommandQueue}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Command\+Queue\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+checks to see if the queue is empty 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_command_queue_a3a6eb6a7c83d9b20ad7a6cac63795ec1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_command_queue_ac2dde510222b8df393b55978f4594194}\label{class_command_queue_ac2dde510222b8df393b55978f4594194}} 
+\index{CommandQueue@{CommandQueue}!pop@{pop}}
+\index{pop@{pop}!CommandQueue@{CommandQueue}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_command}{Command}} Command\+Queue\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the last command from the queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_command}{Command}} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_command_queue_ac2dde510222b8df393b55978f4594194_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_command_queue_ad444e0d7af45d9e09b834f0cec1e1f43}\label{class_command_queue_ad444e0d7af45d9e09b834f0cec1e1f43}} 
+\index{CommandQueue@{CommandQueue}!push@{push}}
+\index{push@{push}!CommandQueue@{CommandQueue}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void Command\+Queue\+::push (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_command}{Command}} \&}]{command }\end{DoxyParamCaption})}
+
+
+
+pushes the new command to the queue 
+
+\DoxyHorRuler{0}
+ Assignment 1 author \+: Negar Saeidi -\/ 101261396 \hypertarget{class_command_queue_autotoc_md2}{}\doxysubsubsection{Command\+Queue.\+cpp, this class transports commands to the world and the scene graph}\label{class_command_queue_autotoc_md2}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_queue_ad444e0d7af45d9e09b834f0cec1e1f43_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+T163-\/\+Term6/\+Hooman-\/\+Engine/\+Assignment2/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_command_queue_8hpp}{Command\+Queue.\+hpp}}\item 
+D\+:/\+T163-\/\+Term6/\+Hooman-\/\+Engine/\+Assignment2/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_command_queue_8cpp}{Command\+Queue.\+cpp}}\end{DoxyCompactItemize}

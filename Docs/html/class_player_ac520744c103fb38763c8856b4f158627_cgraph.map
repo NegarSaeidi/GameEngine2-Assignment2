@@ -1,0 +1,4 @@
+<map id="Player::handleRealtimeInput" name="Player::handleRealtimeInput">
+<area shape="rect" id="node1" title="handles holding a key down event (real time input)" alt="" coords="5,5,189,32"/>
+<area shape="rect" id="node2" href="$class_command_queue.html#ad444e0d7af45d9e09b834f0cec1e1f43" title="pushes the new command to the queue" alt="" coords="237,5,392,32"/>
+</map>

@@ -1,7 +1,15 @@
 var searchData=
 [
-  ['texc_88',['TexC',['../struct_vertex.html#a43e8c374e56c6ed3acc708ba2de1c70c',1,'Vertex']]],
-  ['textransform_89',['TexTransform',['../struct_object_constants.html#a0a7f8e4817a18595707569b307060a42',1,'ObjectConstants::TexTransform()'],['../struct_render_item.html#ac6799548474209d172cbb3d337f56074',1,'RenderItem::TexTransform()']]],
-  ['totaltime_90',['TotalTime',['../struct_pass_constants.html#a8b7dc8578d216518bff83264bc85d34c',1,'PassConstants']]],
-  ['type_91',['Type',['../class_aircraft.html#a7dae28542933e088032b753600046acd',1,'Aircraft']]]
+  ['scene_114',['Scene',['../namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0ae45daecedd1b5f037e9e6e915a44f3b0',1,'Category']]],
+  ['scenenode_115',['SceneNode',['../class_scene_node.html',1,'SceneNode'],['../class_scene_node.html#af1f3bf5e98c8b2c90b36057df2577d1a',1,'SceneNode::SceneNode()']]],
+  ['scenenode_2ecpp_116',['SceneNode.cpp',['../_scene_node_8cpp.html',1,'']]],
+  ['scenenode_2ehpp_117',['SceneNode.hpp',['../_scene_node_8hpp.html',1,'']]],
+  ['setposition_118',['setPosition',['../class_scene_node.html#a45f8882749060b059fe26eb02f7f843b',1,'SceneNode']]],
+  ['setscale_119',['setScale',['../class_scene_node.html#a753cea60b8a939a82a47258f4a51df82',1,'SceneNode']]],
+  ['setvelocity_120',['setVelocity',['../class_entity.html#a472e1690df5fb48c6c7f052e4cb39c78',1,'Entity::setVelocity(XMFLOAT3 velocity)'],['../class_entity.html#abb3c22fe7e78968131560642e360e12b',1,'Entity::setVelocity(float vx, float vy, float vz)']]],
+  ['setworldrotation_121',['setWorldRotation',['../class_scene_node.html#a66fa14e7553900ae540f13e4dc5f749b',1,'SceneNode']]],
+  ['spritenode_122',['SpriteNode',['../class_sprite_node.html',1,'SpriteNode'],['../class_sprite_node.html#af9a13269b4f3d7a194e1826c704155dc',1,'SpriteNode::SpriteNode()']]],
+  ['spritenode_2ecpp_123',['SpriteNode.cpp',['../_sprite_node_8cpp.html',1,'']]],
+  ['spritenode_2ehpp_124',['SpriteNode.hpp',['../_sprite_node_8hpp.html',1,'']]],
+  ['startindexlocation_125',['StartIndexLocation',['../struct_render_item.html#a979179c6dd354cd329563e3599245463',1,'RenderItem']]]
 ];

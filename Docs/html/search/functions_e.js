@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tick_673',['Tick',['../class_game_timer.html#ac02f02b90ae1c2d6a2834abb5069f367',1,'GameTimer']]],
-  ['tostring_674',['ToString',['../classd3d_util.html#ae0b7d841076df11833db2564c86faefe',1,'d3dUtil::ToString()'],['../class_dx_exception.html#a031a5ff549f043decbe96093e73dac27',1,'DxException::ToString()']]],
-  ['totaltime_675',['TotalTime',['../class_game_timer.html#a4d51c259eeb170d1841f84f41779592d',1,'GameTimer']]]
+  ['update_225',['update',['../class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08',1,'SceneNode::update()'],['../class_world.html#a36c003f54e14e022a360551af5e7923e',1,'World::update()']]],
+  ['updatecurrent_226',['updateCurrent',['../class_entity.html#ac2ba9cb8ca54fff11ad7397334edcd94',1,'Entity']]]
 ];

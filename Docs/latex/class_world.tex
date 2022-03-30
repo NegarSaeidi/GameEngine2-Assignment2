@@ -6,8 +6,13 @@
 
 
 
-Collaboration diagram for World\+:
-% FIG 0
+Collaboration diagram for World\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_world__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -18,7 +23,9 @@ void \mbox{\hyperlink{class_world_a36c003f54e14e022a360551af5e7923e}{update}} (c
 void \mbox{\hyperlink{class_world_ab51a17ccbb108616daacd0c34973dc8d}{draw}} ()
 \item 
 void \mbox{\hyperlink{class_world_ae7df49f5d488e5cd1254bf360966f410}{build\+Scene}} ()
-\begin{DoxyCompactList}\small\item\em builds the game scene, creates scene nodes and adds the m to the scene graph \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em builds the game scene, creates scene nodes and adds the m to the scene graph \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_command_queue}{Command\+Queue}} \& \mbox{\hyperlink{class_world_af224b413f30c86ec99d042d0f4df56ee}{get\+Command\+Queue}} ()
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -49,16 +56,32 @@ builds the game scene, creates scene nodes and adds the m to the scene graph
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-% FIG 1
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_world_ae7df49f5d488e5cd1254bf360966f410_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_world_ab51a17ccbb108616daacd0c34973dc8d}\label{class_world_ab51a17ccbb108616daacd0c34973dc8d}} 
 \index{World@{World}!draw@{draw}}
 \index{draw@{draw}!World@{World}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void World\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-% FIG 2
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_world_ab51a17ccbb108616daacd0c34973dc8d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_world_af224b413f30c86ec99d042d0f4df56ee}\label{class_world_af224b413f30c86ec99d042d0f4df56ee}} 
+\index{World@{World}!getCommandQueue@{getCommandQueue}}
+\index{getCommandQueue@{getCommandQueue}!World@{World}}
+\doxysubsubsection{\texorpdfstring{getCommandQueue()}{getCommandQueue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_command_queue}{Command\+Queue}} \& World\+::get\+Command\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_world_a36c003f54e14e022a360551af5e7923e}\label{class_world_a36c003f54e14e022a360551af5e7923e}} 
 \index{World@{World}!update@{update}}
 \index{update@{update}!World@{World}}
@@ -77,11 +100,16 @@ Updates the scene graph, calls the update function of eahc scene node.
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-% FIG 3
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_world_a36c003f54e14e022a360551af5e7923e_cgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_world_8hpp}{World.\+hpp}}\item 
-Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_world_8cpp}{World.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+T163-\/\+Term6/\+Hooman-\/\+Engine/\+Assignment2/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_world_8hpp}{World.\+hpp}}\item 
+D\+:/\+T163-\/\+Term6/\+Hooman-\/\+Engine/\+Assignment2/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_world_8cpp}{World.\+cpp}}\end{DoxyCompactItemize}

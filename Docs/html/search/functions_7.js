@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['move_149',['move',['../class_scene_node.html#aec657f40def4be5c901192ec85027a35',1,'SceneNode']]]
+  ['handleevent_207',['handleEvent',['../class_player.html#abdabbfe5ce0c04acf504ff5054dbcbc1',1,'Player']]],
+  ['handlerealtimeinput_208',['handleRealtimeInput',['../class_player.html#ac520744c103fb38763c8856b4f158627',1,'Player']]]
 ];

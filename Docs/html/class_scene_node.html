@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Game Engine 2 - Assignment 1 - DirectX: SceneNode Class Reference</title>
+<title>Game Engine 2 - Assignment 2 - DirectX: SceneNode Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Game Engine 2 - Assignment 1 - DirectX
+   <div id="projectname">Game Engine 2 - Assignment 2 - DirectX
    </div>
   </td>
  </tr>
@@ -97,10 +97,10 @@ Inheritance diagram for SceneNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scene_node__inherit__graph.png" border="0" usemap="#a_scene_node_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_scene_node_inherit__map" id="a_scene_node_inherit__map">
-<area shape="rect" title=" " alt="" coords="30,5,181,303"/>
-<area shape="rect" href="class_entity.html" title=" " alt="" coords="44,351,167,487"/>
-<area shape="rect" href="class_aircraft.html" title=" " alt="" coords="5,535,88,612"/>
-<area shape="rect" href="class_sprite_node.html" title=" " alt="" coords="112,535,219,612"/>
+<area shape="rect" title=" " alt="" coords="71,5,185,127"/>
+<area shape="rect" href="class_entity.html" title=" " alt="" coords="75,175,181,281"/>
+<area shape="rect" href="class_aircraft.html" title=" " alt="" coords="5,329,117,421"/>
+<area shape="rect" href="class_sprite_node.html" title=" " alt="" coords="141,337,248,414"/>
 </map>
 </div>
 <div class="dynheader">
@@ -108,10 +108,10 @@ Collaboration diagram for SceneNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scene_node__coll__graph.png" border="0" usemap="#a_scene_node_coll__map" alt="Collaboration graph"/></div>
 <map name="a_scene_node_coll__map" id="a_scene_node_coll__map">
-<area shape="rect" title=" " alt="" coords="79,404,230,687"/>
-<area shape="rect" href="class_game.html" title=" " alt="" coords="5,147,139,327"/>
-<area shape="rect" title=" " alt="" coords="37,5,107,83"/>
-<area shape="rect" href="struct_render_item.html" title=" " alt="" coords="163,132,314,341"/>
+<area shape="rect" title=" " alt="" coords="67,301,176,408"/>
+<area shape="rect" href="class_game.html" title=" " alt="" coords="5,132,104,239"/>
+<area shape="rect" title=" " alt="" coords="19,5,90,83"/>
+<area shape="rect" href="struct_render_item.html" title=" " alt="" coords="128,132,240,239"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -163,6 +163,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e503eeca953d36b652a12ceadb64d28"><td class="memItemLeft" align="right" valign="top">XMFLOAT4X4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a5e503eeca953d36b652a12ceadb64d28">getTransform</a> () const</td></tr>
 <tr class="memdesc:a5e503eeca953d36b652a12ceadb64d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the local tranform of this node  <a href="class_scene_node.html#a5e503eeca953d36b652a12ceadb64d28">More...</a><br /></td></tr>
 <tr class="separator:a5e503eeca953d36b652a12ceadb64d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378e78ad679c28301c0db51afa389cb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a378e78ad679c28301c0db51afa389cb6">onCommand</a> (const <a class="el" href="struct_command.html">Command</a> &amp;command, const GameTimer &amp;gt)</td></tr>
+<tr class="separator:a378e78ad679c28301c0db51afa389cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af713a8c58831a27bc791a2efdfb7c495"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#af713a8c58831a27bc791a2efdfb7c495">getCategory</a> () const</td></tr>
+<tr class="separator:af713a8c58831a27bc791a2efdfb7c495"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec657f40def4be5c901192ec85027a35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#aec657f40def4be5c901192ec85027a35">move</a> (float x, float y, float z)</td></tr>
 <tr class="memdesc:aec657f40def4be5c901192ec85027a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">updates the position of this node  <a href="class_scene_node.html#aec657f40def4be5c901192ec85027a35">More...</a><br /></td></tr>
 <tr class="separator:aec657f40def4be5c901192ec85027a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,6 +346,43 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="af713a8c58831a27bc791a2efdfb7c495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af713a8c58831a27bc791a2efdfb7c495">&#9670;&nbsp;</a></span>getCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceneNode::getCategory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_aircraft.html#a01f9042934c08ef18b62351e6bca320d">Aircraft</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_node_af713a8c58831a27bc791a2efdfb7c495_icgraph.png" border="0" usemap="#aclass_scene_node_af713a8c58831a27bc791a2efdfb7c495_icgraph" alt=""/></div>
+<map name="aclass_scene_node_af713a8c58831a27bc791a2efdfb7c495_icgraph" id="aclass_scene_node_af713a8c58831a27bc791a2efdfb7c495_icgraph">
+<area shape="rect" title=" " alt="" coords="375,5,541,32"/>
+<area shape="rect" href="class_scene_node.html#a378e78ad679c28301c0db51afa389cb6" title=" " alt="" coords="156,5,327,32"/>
+<area shape="rect" href="class_world.html#a36c003f54e14e022a360551af5e7923e" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="5,5,108,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a5e503eeca953d36b652a12ceadb64d28"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e503eeca953d36b652a12ceadb64d28">&#9670;&nbsp;</a></span>getTransform()</h2>
 
@@ -391,15 +432,6 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>XMFLOAT3 </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_scene_node_a6ba2f5754854829e7e49f135bb4fce45_icgraph.png" border="0" usemap="#aclass_scene_node_a6ba2f5754854829e7e49f135bb4fce45_icgraph" alt=""/></div>
-<map name="aclass_scene_node_a6ba2f5754854829e7e49f135bb4fce45_icgraph" id="aclass_scene_node_a6ba2f5754854829e7e49f135bb4fce45_icgraph">
-<area shape="rect" title="returns the world position of this node" alt="" coords="156,5,352,32"/>
-<area shape="rect" href="class_world.html#a36c003f54e14e022a360551af5e7923e" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="5,5,108,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -529,6 +561,52 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="updates the position of this node" alt="" coords="199,31,325,57"/>
 <area shape="rect" href="class_world.html#a36c003f54e14e022a360551af5e7923e" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="27,5,129,32"/>
 <area shape="rect" href="class_entity.html#ac2ba9cb8ca54fff11ad7397334edcd94" title="updates the current entity" alt="" coords="5,56,151,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a378e78ad679c28301c0db51afa389cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a378e78ad679c28301c0db51afa389cb6">&#9670;&nbsp;</a></span>onCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SceneNode::onCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_command.html">Command</a> &amp;&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GameTimer &amp;&#160;</td>
+          <td class="paramname"><em>gt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_node_a378e78ad679c28301c0db51afa389cb6_cgraph.png" border="0" usemap="#aclass_scene_node_a378e78ad679c28301c0db51afa389cb6_cgraph" alt=""/></div>
+<map name="aclass_scene_node_a378e78ad679c28301c0db51afa389cb6_cgraph" id="aclass_scene_node_a378e78ad679c28301c0db51afa389cb6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,176,32"/>
+<area shape="rect" href="class_scene_node.html#af713a8c58831a27bc791a2efdfb7c495" title=" " alt="" coords="224,5,391,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_node_a378e78ad679c28301c0db51afa389cb6_icgraph.png" border="0" usemap="#aclass_scene_node_a378e78ad679c28301c0db51afa389cb6_icgraph" alt=""/></div>
+<map name="aclass_scene_node_a378e78ad679c28301c0db51afa389cb6_icgraph" id="aclass_scene_node_a378e78ad679c28301c0db51afa389cb6_icgraph">
+<area shape="rect" title=" " alt="" coords="156,5,327,32"/>
+<area shape="rect" href="class_world.html#a36c003f54e14e022a360551af5e7923e" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="5,5,108,32"/>
 </map>
 </div>
 
@@ -763,8 +841,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>GameEngineDevelopment2_Assignment1/<a class="el" href="_scene_node_8hpp_source.html">SceneNode.hpp</a></li>
-<li>GameEngineDevelopment2_Assignment1/<a class="el" href="_scene_node_8cpp.html">SceneNode.cpp</a></li>
+<li>D:/T163-Term6/Hooman-Engine/Assignment2/GameEngineDevelopment2_Assignment1/GameEngineDevelopment2_Assignment1/<a class="el" href="_scene_node_8hpp_source.html">SceneNode.hpp</a></li>
+<li>D:/T163-Term6/Hooman-Engine/Assignment2/GameEngineDevelopment2_Assignment1/GameEngineDevelopment2_Assignment1/<a class="el" href="_scene_node_8cpp.html">SceneNode.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

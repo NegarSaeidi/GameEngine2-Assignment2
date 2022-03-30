@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['scenenode_2ecpp_124',['SceneNode.cpp',['../_scene_node_8cpp.html',1,'']]],
-  ['scenenode_2ehpp_125',['SceneNode.hpp',['../_scene_node_8hpp.html',1,'']]],
-  ['spritenode_2ecpp_126',['SpriteNode.cpp',['../_sprite_node_8cpp.html',1,'']]],
-  ['spritenode_2ehpp_127',['SpriteNode.hpp',['../_sprite_node_8hpp.html',1,'']]]
+  ['player_2ecpp_172',['Player.cpp',['../_player_8cpp.html',1,'']]],
+  ['player_2ehpp_173',['Player.hpp',['../_player_8hpp.html',1,'']]]
 ];

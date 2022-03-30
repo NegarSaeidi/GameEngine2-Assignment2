@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['layercount_919',['LayerCount',['../class_world.html#a7580b1f38bb9018be3eeef74462b4b2fab85a44d6989a43dc11f11bacedb2bf94',1,'World']]]
+  ['opaque_292',['Opaque',['../_game_8hpp.html#aa63ede3e7371d4bc358f651428d23159afaa90538de35640e4b1e31ccf35b6eb5',1,'Game.hpp']]]
 ];

@@ -1,0 +1,180 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+{\ttfamily \#include $<$Player.\+hpp$>$}
+
+
+
+Collaboration diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Action}} \{ \newline
+\mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88a0166b28e57a9a8553a603a4c0fbe5807}{Move\+Left}}
+, \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88aa89dbd9060b77566a66b115531df631b}{Move\+Right}}
+, \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88a6c74df21e9d4e850dd175a23b78c6540}{Move\+Up}}
+, \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88a685fada3f0a5111b3b8e56f5357a05b0}{Move\+Down}}
+, \newline
+\mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88a87902fdc759f9fb7ddeb79277bd1c337}{Move\+Forward}}
+, \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88a0b5dc1e9ee9644d81f6198e23da6dc74}{Action\+Count}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}} ()
+\item 
+void \mbox{\hyperlink{class_player_abdabbfe5ce0c04acf504ff5054dbcbc1}{handle\+Event}} (\mbox{\hyperlink{class_command_queue}{Command\+Queue}} \&commands)
+\begin{DoxyCompactList}\small\item\em handles key release and press events \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ac520744c103fb38763c8856b4f158627}{handle\+Realtime\+Input}} (\mbox{\hyperlink{class_command_queue}{Command\+Queue}} \&commands)
+\begin{DoxyCompactList}\small\item\em handles holding a key down event (real time input) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a1aebc48270700e3052aaf2653be62bc6}{assign\+Key}} (\mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Action}} action, char key)
+\begin{DoxyCompactList}\small\item\em Adds new keybindings. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_player_a6ffaa42ae4d105bd8a775f18ce37c463}{get\+Assigned\+Key}} (\mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Action}} action) const
+\begin{DoxyCompactList}\small\item\em returns the assigned key based on the relative action \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88}\label{class_player_a2da5df212d083bbb1460237f34ab0d88}} 
+\index{Player@{Player}!Action@{Action}}
+\index{Action@{Action}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Action}{Action}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Player\+::\+Action}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveLeft@{MoveLeft}!Player@{Player}}\index{Player@{Player}!MoveLeft@{MoveLeft}}}\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88a0166b28e57a9a8553a603a4c0fbe5807}\label{class_player_a2da5df212d083bbb1460237f34ab0d88a0166b28e57a9a8553a603a4c0fbe5807}} 
+Move\+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveRight@{MoveRight}!Player@{Player}}\index{Player@{Player}!MoveRight@{MoveRight}}}\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88aa89dbd9060b77566a66b115531df631b}\label{class_player_a2da5df212d083bbb1460237f34ab0d88aa89dbd9060b77566a66b115531df631b}} 
+Move\+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveUp@{MoveUp}!Player@{Player}}\index{Player@{Player}!MoveUp@{MoveUp}}}\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88a6c74df21e9d4e850dd175a23b78c6540}\label{class_player_a2da5df212d083bbb1460237f34ab0d88a6c74df21e9d4e850dd175a23b78c6540}} 
+Move\+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveDown@{MoveDown}!Player@{Player}}\index{Player@{Player}!MoveDown@{MoveDown}}}\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88a685fada3f0a5111b3b8e56f5357a05b0}\label{class_player_a2da5df212d083bbb1460237f34ab0d88a685fada3f0a5111b3b8e56f5357a05b0}} 
+Move\+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveForward@{MoveForward}!Player@{Player}}\index{Player@{Player}!MoveForward@{MoveForward}}}\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88a87902fdc759f9fb7ddeb79277bd1c337}\label{class_player_a2da5df212d083bbb1460237f34ab0d88a87902fdc759f9fb7ddeb79277bd1c337}} 
+Move\+Forward&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ActionCount@{ActionCount}!Player@{Player}}\index{Player@{Player}!ActionCount@{ActionCount}}}\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88a0b5dc1e9ee9644d81f6198e23da6dc74}\label{class_player_a2da5df212d083bbb1460237f34ab0d88a0b5dc1e9ee9644d81f6198e23da6dc74}} 
+Action\+Count&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_a1aebc48270700e3052aaf2653be62bc6}\label{class_player_a1aebc48270700e3052aaf2653be62bc6}} 
+\index{Player@{Player}!assignKey@{assignKey}}
+\index{assignKey@{assignKey}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{assignKey()}{assignKey()}}
+{\footnotesize\ttfamily void Player\+::assign\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Action}}}]{action,  }\item[{char}]{key }\end{DoxyParamCaption})}
+
+
+
+Adds new keybindings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Action} & action, char key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a6ffaa42ae4d105bd8a775f18ce37c463}\label{class_player_a6ffaa42ae4d105bd8a775f18ce37c463}} 
+\index{Player@{Player}!getAssignedKey@{getAssignedKey}}
+\index{getAssignedKey@{getAssignedKey}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getAssignedKey()}{getAssignedKey()}}
+{\footnotesize\ttfamily char Player\+::get\+Assigned\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Action}}}]{action }\end{DoxyParamCaption}) const}
+
+
+
+returns the assigned key based on the relative action 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Action} & action \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_abdabbfe5ce0c04acf504ff5054dbcbc1}\label{class_player_abdabbfe5ce0c04acf504ff5054dbcbc1}} 
+\index{Player@{Player}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily void Player\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_command_queue}{Command\+Queue}} \&}]{commands }\end{DoxyParamCaption})}
+
+
+
+handles key release and press events 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{struct_command}{Command}}\& \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_player_abdabbfe5ce0c04acf504ff5054dbcbc1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_ac520744c103fb38763c8856b4f158627}\label{class_player_ac520744c103fb38763c8856b4f158627}} 
+\index{Player@{Player}!handleRealtimeInput@{handleRealtimeInput}}
+\index{handleRealtimeInput@{handleRealtimeInput}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{handleRealtimeInput()}{handleRealtimeInput()}}
+{\footnotesize\ttfamily void Player\+::handle\+Realtime\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_command_queue}{Command\+Queue}} \&}]{commands }\end{DoxyParamCaption})}
+
+
+
+handles holding a key down event (real time input) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{struct_command}{Command}}\& \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_ac520744c103fb38763c8856b4f158627_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+T163-\/\+Term6/\+Hooman-\/\+Engine/\+Assignment2/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_player_8hpp}{Player.\+hpp}}\item 
+D\+:/\+T163-\/\+Term6/\+Hooman-\/\+Engine/\+Assignment2/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

@@ -1,8 +1,10 @@
 <map id="World::update" name="World::update">
-<area shape="rect" id="node1" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="5,107,108,133"/>
-<area shape="rect" id="node2" href="$class_entity.html#a8e1cbc69431758859f15d0b9d70b8cf5" title="returns the velocity of the entity" alt="" coords="189,5,319,32"/>
-<area shape="rect" id="node3" href="$class_scene_node.html#a6ba2f5754854829e7e49f135bb4fce45" title="returns the world position of this node" alt="" coords="156,56,352,83"/>
-<area shape="rect" id="node4" href="$class_scene_node.html#aec657f40def4be5c901192ec85027a35" title="updates the position of this node" alt="" coords="191,107,317,133"/>
-<area shape="rect" id="node5" href="$class_entity.html#acf5f6bb1df6f5dba9923a2355b8c0ac2" title="sets the velocity of the entity" alt="" coords="189,157,319,184"/>
-<area shape="rect" id="node6" href="$class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08" title="calls the update function of this node and its children" alt="" coords="186,208,322,235"/>
+<area shape="rect" id="node1" title="Updates the scene graph, calls the update function of eahc scene node." alt="" coords="5,132,108,159"/>
+<area shape="rect" id="node2" href="$class_command_queue.html#a3a6eb6a7c83d9b20ad7a6cac63795ec1" title="checks to see if the queue is empty" alt="" coords="156,5,331,32"/>
+<area shape="rect" id="node3" href="$class_scene_node.html#aec657f40def4be5c901192ec85027a35" title="updates the position of this node" alt="" coords="180,56,307,83"/>
+<area shape="rect" id="node4" href="$class_scene_node.html#a378e78ad679c28301c0db51afa389cb6" title=" " alt="" coords="158,107,329,133"/>
+<area shape="rect" id="node6" href="$class_command_queue.html#ac2dde510222b8df393b55978f4594194" title="returns the last command from the queue" alt="" coords="169,157,317,184"/>
+<area shape="rect" id="node7" href="$class_entity.html#a472e1690df5fb48c6c7f052e4cb39c78" title="sets the velocity of the entity" alt="" coords="179,208,308,235"/>
+<area shape="rect" id="node8" href="$class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08" title="calls the update function of this node and its children" alt="" coords="175,259,311,285"/>
+<area shape="rect" id="node5" href="$class_scene_node.html#af713a8c58831a27bc791a2efdfb7c495" title=" " alt="" coords="379,107,545,133"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['frameresource_137',['FrameResource',['../struct_frame_resource.html#a496fdce5ab50522a3dcbf9260be6e86c',1,'FrameResource::FrameResource(ID3D12Device *device, UINT passCount, UINT objectCount, UINT materialCount)'],['../struct_frame_resource.html#a847d99ad6c492fd988ab52623e56aed5',1,'FrameResource::FrameResource(const FrameResource &amp;rhs)=delete']]]
+  ['entity_192',['Entity',['../class_entity.html#a9f6b0ce5dcbdb9107ba1972da24003a6',1,'Entity']]]
 ];

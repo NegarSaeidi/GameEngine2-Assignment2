@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['scenenode_77',['SceneNode',['../class_scene_node.html',1,'SceneNode'],['../class_scene_node.html#af1f3bf5e98c8b2c90b36057df2577d1a',1,'SceneNode::SceneNode()']]],
-  ['scenenode_2ecpp_78',['SceneNode.cpp',['../_scene_node_8cpp.html',1,'']]],
-  ['scenenode_2ehpp_79',['SceneNode.hpp',['../_scene_node_8hpp.html',1,'']]],
-  ['setposition_80',['setPosition',['../class_scene_node.html#a45f8882749060b059fe26eb02f7f843b',1,'SceneNode']]],
-  ['setscale_81',['setScale',['../class_scene_node.html#a753cea60b8a939a82a47258f4a51df82',1,'SceneNode']]],
-  ['setvelocity_82',['setVelocity',['../class_entity.html#acf5f6bb1df6f5dba9923a2355b8c0ac2',1,'Entity::setVelocity(XMFLOAT2 velocity)'],['../class_entity.html#a7873fbd61cf1a742d4492ec438a9ac9f',1,'Entity::setVelocity(float vx, float vy)']]],
-  ['setworldrotation_83',['setWorldRotation',['../class_scene_node.html#a66fa14e7553900ae540f13e4dc5f749b',1,'SceneNode']]],
-  ['spritenode_84',['SpriteNode',['../class_sprite_node.html',1,'SpriteNode'],['../class_sprite_node.html#af9a13269b4f3d7a194e1826c704155dc',1,'SpriteNode::SpriteNode()']]],
-  ['spritenode_2ecpp_85',['SpriteNode.cpp',['../_sprite_node_8cpp.html',1,'']]],
-  ['spritenode_2ehpp_86',['SpriteNode.hpp',['../_sprite_node_8hpp.html',1,'']]],
-  ['startindexlocation_87',['StartIndexLocation',['../struct_render_item.html#a979179c6dd354cd329563e3599245463',1,'RenderItem']]]
+  ['raptor_108',['Raptor',['../class_aircraft.html#a7dae28542933e088032b753600046acdaf080b57c0c515dea65f056395cc6d59b',1,'Aircraft']]],
+  ['readme_2edox_109',['README.dox',['../_r_e_a_d_m_e_8dox.html',1,'']]],
+  ['renderer_110',['renderer',['../class_scene_node.html#a51b22a4d6789039a96ebab097ed03db0',1,'SceneNode']]],
+  ['renderitem_111',['RenderItem',['../struct_render_item.html',1,'RenderItem'],['../struct_render_item.html#ad6c4cbd7fea14ab4b71bd3be38208487',1,'RenderItem::RenderItem()']]],
+  ['renderlayer_112',['RenderLayer',['../_game_8hpp.html#aa63ede3e7371d4bc358f651428d23159',1,'Game.hpp']]],
+  ['rendertargetsize_113',['RenderTargetSize',['../struct_pass_constants.html#aca6c8d20f6c92f8a117ef21bd7666687',1,'PassConstants']]]
 ];

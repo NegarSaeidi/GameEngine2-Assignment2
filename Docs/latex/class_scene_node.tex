@@ -6,12 +6,22 @@
 
 
 
-Inheritance diagram for Scene\+Node\+:
-% FIG 0
+Inheritance diagram for Scene\+Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{class_scene_node__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Scene\+Node\+:
-% FIG 1
+Collaboration diagram for Scene\+Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_scene_node__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -48,6 +58,10 @@ XMFLOAT4\+X4 \mbox{\hyperlink{class_scene_node_a58fbaea11dad15681acbe6abdbff03a7
 \begin{DoxyCompactList}\small\item\em returns the world tranform of this node \end{DoxyCompactList}\item 
 XMFLOAT4\+X4 \mbox{\hyperlink{class_scene_node_a5e503eeca953d36b652a12ceadb64d28}{get\+Transform}} () const
 \begin{DoxyCompactList}\small\item\em returns the local tranform of this node \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_node_a378e78ad679c28301c0db51afa389cb6}{on\+Command}} (const \mbox{\hyperlink{struct_command}{Command}} \&command, const Game\+Timer \&gt)
+\item 
+virtual unsigned int \mbox{\hyperlink{class_scene_node_af713a8c58831a27bc791a2efdfb7c495}{get\+Category}} () const
+\item 
 void \mbox{\hyperlink{class_scene_node_aec657f40def4be5c901192ec85027a35}{move}} (float x, float y, float z)
 \begin{DoxyCompactList}\small\item\em updates the position of this node \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
@@ -96,8 +110,13 @@ add a child to this node
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-% FIG 2
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_scene_node_acdfa2c2ba28bce076c886eaba2d9e650_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_scene_node_a67ca883a91d8c45004a0786330548d8f}\label{class_scene_node_a67ca883a91d8c45004a0786330548d8f}} 
 \index{SceneNode@{SceneNode}!build@{build}}
 \index{build@{build}!SceneNode@{SceneNode}}
@@ -116,8 +135,13 @@ calls the build function of this node and its children
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-% FIG 3
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_scene_node_a67ca883a91d8c45004a0786330548d8f_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_scene_node_a3b9681eb3db7d9e575945b57e275e040}\label{class_scene_node_a3b9681eb3db7d9e575945b57e275e040}} 
 \index{SceneNode@{SceneNode}!detachChild@{detachChild}}
 \index{detachChild@{detachChild}!SceneNode@{SceneNode}}
@@ -154,8 +178,30 @@ calls the draw function of this node and its children
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-% FIG 4
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_scene_node_a41b1a847182e49103bc145bd4604e056_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_node_af713a8c58831a27bc791a2efdfb7c495}\label{class_scene_node_af713a8c58831a27bc791a2efdfb7c495}} 
+\index{SceneNode@{SceneNode}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily unsigned int Scene\+Node\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_aircraft_a01f9042934c08ef18b62351e6bca320d}{Aircraft}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_node_af713a8c58831a27bc791a2efdfb7c495_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_scene_node_a5e503eeca953d36b652a12ceadb64d28}\label{class_scene_node_a5e503eeca953d36b652a12ceadb64d28}} 
 \index{SceneNode@{SceneNode}!getTransform@{getTransform}}
 \index{getTransform@{getTransform}!SceneNode@{SceneNode}}
@@ -192,8 +238,6 @@ returns the world position of this node
 \begin{DoxyReturn}{Returns}
 XMFLOAT3 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-% FIG 5
 \mbox{\Hypertarget{class_scene_node_a1a5ce797162b569b79494b7c2a696713}\label{class_scene_node_a1a5ce797162b569b79494b7c2a696713}} 
 \index{SceneNode@{SceneNode}!getWorldRotation@{getWorldRotation}}
 \index{getWorldRotation@{getWorldRotation}!SceneNode@{SceneNode}}
@@ -266,8 +310,33 @@ updates the position of this node
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-% FIG 6
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_scene_node_aec657f40def4be5c901192ec85027a35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_node_a378e78ad679c28301c0db51afa389cb6}\label{class_scene_node_a378e78ad679c28301c0db51afa389cb6}} 
+\index{SceneNode@{SceneNode}!onCommand@{onCommand}}
+\index{onCommand@{onCommand}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{onCommand()}{onCommand()}}
+{\footnotesize\ttfamily void Scene\+Node\+::on\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_command}{Command}} \&}]{command,  }\item[{const Game\+Timer \&}]{gt }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_node_a378e78ad679c28301c0db51afa389cb6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_scene_node_a378e78ad679c28301c0db51afa389cb6_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_scene_node_a45f8882749060b059fe26eb02f7f843b}\label{class_scene_node_a45f8882749060b059fe26eb02f7f843b}} 
 \index{SceneNode@{SceneNode}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!SceneNode@{SceneNode}}
@@ -286,8 +355,13 @@ sets the world position of this node
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-% FIG 7
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_scene_node_a45f8882749060b059fe26eb02f7f843b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_scene_node_a753cea60b8a939a82a47258f4a51df82}\label{class_scene_node_a753cea60b8a939a82a47258f4a51df82}} 
 \index{SceneNode@{SceneNode}!setScale@{setScale}}
 \index{setScale@{setScale}!SceneNode@{SceneNode}}
@@ -306,8 +380,13 @@ sets the scale of this node
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-% FIG 8
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_scene_node_a753cea60b8a939a82a47258f4a51df82_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_scene_node_a66fa14e7553900ae540f13e4dc5f749b}\label{class_scene_node_a66fa14e7553900ae540f13e4dc5f749b}} 
 \index{SceneNode@{SceneNode}!setWorldRotation@{setWorldRotation}}
 \index{setWorldRotation@{setWorldRotation}!SceneNode@{SceneNode}}
@@ -344,8 +423,13 @@ calls the update function of this node and its children
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-% FIG 9
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_scene_node_a858b7a088c0a2d01aaa90baf05d58d08_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
@@ -365,5 +449,5 @@ Here is the caller graph for this function\+:
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_scene_node_8hpp}{Scene\+Node.\+hpp}}\item 
-Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_scene_node_8cpp}{Scene\+Node.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+T163-\/\+Term6/\+Hooman-\/\+Engine/\+Assignment2/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_scene_node_8hpp}{Scene\+Node.\+hpp}}\item 
+D\+:/\+T163-\/\+Term6/\+Hooman-\/\+Engine/\+Assignment2/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_scene_node_8cpp}{Scene\+Node.\+cpp}}\end{DoxyCompactItemize}
