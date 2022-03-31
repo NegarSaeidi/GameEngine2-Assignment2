@@ -14,7 +14,7 @@ World::World(Game* game)
 	, mPlayerAircraft(nullptr)
 	, mBackground(nullptr)
 	, mSceneLayers()
-	, mWorldBounds(-3.f, 3.f, 200.0f, 0.0f)
+	, mWorldBounds(-4.f, 4.f, 0.1f, 3.0f)
 	, mSpawnPostion(0.0f,0.0f)
 	, mScrollSpeed(-1.f)
 {
@@ -113,8 +113,8 @@ void World::adaptPlayerPosition()
 	XMFLOAT3 position = mPlayerAircraft->getWorldPosition();
 	position.x = std::max(position.x, mWorldBounds.x);
 	position.x = std::min(position.x, mWorldBounds.y);
-	position.z = std::max(position.y, mWorldBounds.z);
-	position.z = std::min(position.y, mWorldBounds.w);
+	position.y = std::max(position.y, mWorldBounds.z);
+	position.y = std::min(position.y, mWorldBounds.w);
 	mPlayerAircraft->setPosition(position.x, position.y, position.z);
 }
 

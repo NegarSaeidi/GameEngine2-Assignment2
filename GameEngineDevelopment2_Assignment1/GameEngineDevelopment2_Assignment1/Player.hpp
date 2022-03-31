@@ -19,6 +19,7 @@ public:
 		MoveUp,
 		MoveDown,
 		MoveForward,
+		MoveBackward,
 		ActionCount
 	};
 	void					assignKey(Action action,char key);
@@ -33,7 +34,7 @@ private:
 private:
 	std::map<char, Action>		mKeyBinding;
 	std::map<Action, Command>				mActionBinding;
-	std::map<char, bool>           keyFlag;
+
 #pragma endregion
 
 

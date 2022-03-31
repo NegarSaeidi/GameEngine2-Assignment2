@@ -37,20 +37,22 @@ Player::Player()
 	mKeyBinding[VK_RIGHT] = MoveRight;
 	mKeyBinding[VK_UP] = MoveUp;
 	mKeyBinding[VK_DOWN] = MoveDown;
-	
+
 
 	mKeyBinding['A'] = MoveLeft;
 	mKeyBinding['D'] = MoveRight;
-	mKeyBinding['W'] = MoveUp;
-	mKeyBinding['S'] = MoveDown;
-	mKeyBinding['R'] = MoveForward;
+	mKeyBinding['R'] = MoveUp;
+	mKeyBinding['F'] = MoveDown;
+	mKeyBinding['W'] = MoveForward;
+	mKeyBinding['S'] = MoveBackward;
+
+
 
 
 	// Set initial action bindings
 	initializeActions();
 
-	for (auto pair : mActionBinding)
-		keyFlag[pair.first] = false;
+	
 
 	// Assign all categories to player's aircraft
 	for (auto& pair : mActionBinding)
@@ -63,25 +65,15 @@ Player::Player()
  */
 void Player::handleEvent( CommandQueue& commands)
 {
+
 	for (auto pair : mKeyBinding)
 	{
-		if (!isRealtimeAction(pair.second))
+		if ((GetAsyncKeyState(pair.first) & 0x8000)&&!isRealtimeAction(pair.second))
 		{
-			if (keyFlag[pair.first])
-			{
-				if (!GetAsyncKeyState(pair.first))
-				{
-					keyFlag[pair.first] = false;
-				}
-			}
-			else
-			{
-				if (GetAsyncKeyState(pair.first) & 0x8000)
-				{
-					keyFlag[pair.first] = true;
+			// Check if pressed key appears in key binding, trigger command if so
 					commands.push(mActionBinding[pair.second]);
-				}
-			}
+				
+			
 		}
 	}
 }
@@ -149,7 +141,8 @@ void Player::initializeActions()
 	mActionBinding[MoveRight].action = derivedAction<Aircraft>(AircraftMover(playerSpeed, 0.f,0.f));
 	mActionBinding[MoveUp].action = derivedAction<Aircraft>(AircraftMover(0.f, playerSpeed,0.f));
 	mActionBinding[MoveDown].action = derivedAction<Aircraft>(AircraftMover(0.f, -playerSpeed,0.f));
-	mActionBinding[MoveForward].action = derivedAction<Aircraft>(AircraftMover(0.f, .0f, -playerSpeed));
+	mActionBinding[MoveForward].action = derivedAction<Aircraft>(AircraftMover(0.f, .0f, playerSpeed));
+	mActionBinding[MoveBackward].action = derivedAction<Aircraft>(AircraftMover(0.f, .0f, -playerSpeed));
 }
 
 bool Player::isRealtimeAction(Action action)
@@ -161,6 +154,7 @@ bool Player::isRealtimeAction(Action action)
 	case MoveDown:
 	case MoveUp:
 	case MoveForward:
+	case MoveBackward:
 		return true;
 
 	default:
